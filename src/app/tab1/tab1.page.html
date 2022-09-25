@@ -1,17 +1,37 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Tab 1 mod
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Tab 1</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <app-explore-container name="Tab 1 page mod"></app-explore-container>
 </ion-content>
+<ion-tabs id="barrita1">
+
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="triangulo1">
+            <ion-icon name="triangle"></ion-icon>
+            <ion-label> 1 </ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="circulo2">
+            <ion-icon name="ellipse"></ion-icon>
+            <ion-label> 2 </ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="cuadrado3">
+            <ion-icon name="square"></ion-icon>
+            <ion-label> 3 </ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+
+</ion-tabs>
