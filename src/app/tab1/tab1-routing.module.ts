@@ -16,8 +16,12 @@ const routes: Routes = [
         loadChildren: () => import('../access/access.module').then(m => m.AccessPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'cuadrado3',
+        loadChildren: () => import('../indicee/indicee.module').then(m => m.IndiceePageModule)
+      },
+      {
+        path: 'otro4',
+        loadChildren: () => import('../casa/casa.module').then(m => m.CasaPageModule)
       },
       {
         path: '',
