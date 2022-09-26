@@ -13,6 +13,18 @@ const routes: Routes = [
   {
     path: 'prueba',
     loadChildren: () => import('./prueba/prueba.module').then( m => m.PruebaPageModule)
+  },
+  {
+    path: 'cubos',
+    loadChildren: () => import('./cubos/cubos.module').then( m => m.CubosPageModule)
+  },
+  {
+    path: 'casa',
+    loadChildren: () => import('./casa/casa.module').then( m => m.CasaPageModule)
+  },
+  {
+    path: 'indicee',
+    loadChildren: () => import('./indicee/indicee.module').then( m => m.IndiceePageModule)
   }
 ];
 @NgModule({
