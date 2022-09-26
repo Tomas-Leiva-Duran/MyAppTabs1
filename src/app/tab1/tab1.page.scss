@@ -1,7 +1,14 @@
 /* 
 Arreglar 
-*/
 
 #barrita1 {
-    background-color: darkcyan;
+    color: darkcyan;
 }
+
+barrita1.barritas {
+    background-color: crimson;
+    $background-color: rgb(4, 255, 63);
+    $colors: ( primary: #005eff, secondary: #32db64, danger: #ff0000, light: #f4fb8d, dark: rgb(43, 2, 2), );
+}
+
+*/
