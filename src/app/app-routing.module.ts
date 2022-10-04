@@ -6,7 +6,18 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  {
+  
+];
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
+
+/*
+{
     path: 'access',
     loadChildren: () => import('./access/access.module').then( m => m.AccessPageModule)
   },
@@ -26,11 +37,4 @@ const routes: Routes = [
     path: 'indicee',
     loadChildren: () => import('./indicee/indicee.module').then( m => m.IndiceePageModule)
   }
-];
-@NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
+*/
