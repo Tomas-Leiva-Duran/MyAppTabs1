@@ -6,7 +6,15 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { Component } from '@angular/core';
 
+@Component({
+  selector: 'app-example',
+  templateUrl: 'tab1.page.html',
+})
+export class ExampleComponent {
+  menuType: string = 'overlay';
+}
 @NgModule({
   imports: [
     IonicModule,

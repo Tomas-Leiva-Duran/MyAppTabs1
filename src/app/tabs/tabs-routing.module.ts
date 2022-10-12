@@ -21,7 +21,7 @@ const routes: Routes = [
       },
       {
         path: 'otro4',
-        loadChildren: () => import('../casa/casa.module').then(m => m.CasaPageModule)
+        loadChildren: () => import('../app.module').then(m => m.AppModule)
       },
       {
         path: '',
